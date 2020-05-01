@@ -1,30 +1,25 @@
 <script>
-	export let name;
+	import Footer from './components/Footer/Footer.svelte';
+	import Social from './components/Social/Social.svelte';
+	import Testimonial from './components/Testimonials/Testimonial.svelte';
+	import About from './components/About/About.svelte';
+	import Services from './Services/Services.svelte';
+	import Banner from './components/Banner/Banner.svelte';
+	import Navbar from './components/Navbar/Navbar.svelte';
+	import DATA from './Data/data';
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER}/>
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+<Banner bannerData={DATA.BANNER_DATA} />
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Services serviceData={DATA.SERVICE_DATA} />
+
+<About aboutData={DATA.ABOUT_DATA}/>
+
+<Testimonial testimonialData={DATA.TESTIMONIAL_DATA} />
+
+<Social socialData={DATA.SOCIAL_DATA} />
+
+<Footer footerData={DATA.FOOTER_DATA} header={DATA.HEADER} /> 
