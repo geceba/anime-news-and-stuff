@@ -3,8 +3,8 @@
     <div class="svg-blob">
       <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="orangeToindianred">
-          <stop stop-color="#ff8310" offset="0%" />
-          <stop stop-color="#dd4943" offset="100%" />
+          <stop stop-color="#6867E3" offset="0%" />
+          <stop stop-color="#3D32B4" offset="100%" />
         </linearGradient>
         <path
           fill="url(#orangeToindianred)"
@@ -19,9 +19,9 @@
     <div class="svg-wave svg-wave-bottom">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <linearGradient id="orangeToViolet">
-          <stop stop-color="#ff8310" offset="20%" />
-          <stop stop-color="#e65a30" offset="70%" />
-          <stop stop-color="#c42168" offset="100%" />
+          <stop stop-color="#6867E3" offset="20%" />
+          <stop stop-color="#4136C2" offset="70%" />
+          <stop  stop-color="#3D32B4" offset="100%" />
         </linearGradient>
         <path
           fill="url(#orangeToViolet)"
