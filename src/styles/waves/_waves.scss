@@ -1,4 +1,4 @@
-$colors: ('orange': #6867E3, 'darkOrange': #4136C2, 'violet': #3D32B4);
+$colors: ('orange': rgb(20, 20, 109), 'darkOrange': rgb(36, 31, 85), 'violet': rgb(5, 2, 31));
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
@@ -93,6 +93,7 @@ svg {
 	}
 
 	a {
+		color: white;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -103,8 +104,6 @@ svg {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	background-color: white;
-	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .illustration {
