@@ -1,13 +1,12 @@
 <script>
   import { onMount } from "svelte";
   import Card from './card.svelte';
-  let anime = [];
+  let hentai = [];
 
   onMount(async () => {
-    const apiResponse = await fetch("https://api.jikan.moe/v3/top/anime");
+    const apiResponse = await fetch("https://api.jikan.moe/v3/search/anime?rated=rx");
     const animeJSON = await apiResponse.json();
-    anime = animeJSON.top;
-    console.log(anime);
+    hentai = animeJSON.results;
   });
 </script>
 
@@ -17,6 +16,6 @@
     <p class="text-2xl font-bold">Anime Top</p>
   </div>
 
-  <Card anime={anime}/>
+  <Card anime={hentai}/>
   
 </div>
