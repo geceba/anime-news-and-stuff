@@ -1,5 +1,7 @@
 <script>
 import SliderAnime from './../components/slider-anime.svelte';
+import {link} from 'svelte-spa-router';
+
 let img = "assets/img/hori.svg";
 </script>
 <div class="banner">
@@ -45,7 +47,7 @@ let img = "assets/img/hori.svg";
             <a href="https://getwaves.io/" target="_blank">Mangas</a>
           </li>
           <li>
-            <a href="https://undraw.co/illustrations" target="_blank">
+            <a href="/hentai" use:link>
               Hentai
             </a>
           </li>
