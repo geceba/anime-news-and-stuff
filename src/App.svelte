@@ -1,9 +1,10 @@
 <script>
-	import Home from './pages/home.svelte';
+	import Router from 'svelte-spa-router';
+	import routes from './routes.js';
 </script>
 
 <main>
-	<Home />
+	<Router {routes}/>
 </main>
 
 <style lang="scss" global>

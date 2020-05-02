@@ -1,4 +1,5 @@
 <script>
+import SliderAnime from './../components/slider-anime.svelte';
 let img = "assets/img/hori.svg";
 </script>
 <div class="banner">
@@ -78,4 +79,6 @@ let img = "assets/img/hori.svg";
       </div>
     </div>
   </div>
+
+  <SliderAnime />
 </div>
