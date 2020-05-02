@@ -1,7 +1,8 @@
 <script>
-import SliderAnime from './../components/slider-anime.svelte';
-let img = "assets/img/hori.svg";
+  import SliderAnime from "./../components/slider-anime.svelte";
+  let img = "assets/img/hori.svg";
 </script>
+
 <div class="banner">
   <div class="svg-group bg-gradient">
     <div class="svg-blob">
@@ -25,7 +26,7 @@ let img = "assets/img/hori.svg";
         <linearGradient id="orangeToViolet">
           <stop stop-color="rgb(30, 40, 91)" offset="20%" />
           <stop stop-color="rgb(20, 20, 109)" offset="70%" />
-          <stop  stop-color="rgb(36, 31, 85)" offset="100%" />
+          <stop stop-color="rgb(36, 31, 85)" offset="100%" />
         </linearGradient>
         <path
           fill="url(#orangeToViolet)"
@@ -33,25 +34,6 @@ let img = "assets/img/hori.svg";
           d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,128C672,160,768,192,864,197.3C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
       </svg>
     </div>
-
-    <header class="header">
-      <div class="container flex justify-between px-4">
-        <div />
-        <ol class="nav">
-          <li>
-            <a href="https://www.blobmaker.app/" target="_blank">Animes</a>
-          </li>
-          <li>
-            <a href="https://getwaves.io/" target="_blank">Mangas</a>
-          </li>
-          <li>
-            <a href="https://undraw.co/illustrations" target="_blank">
-              Hentai
-            </a>
-          </li>
-        </ol>
-      </div>
-    </header>
 
     <div class="container h-full md:pb-40 pt-24 px-4 flex items-center">
       <div class="flex flex-wrap md:h-full items-center w-full">
@@ -73,7 +55,7 @@ let img = "assets/img/hori.svg";
 
         <div class="w-full md:w-1/2 flex">
           <div class="card">
-            <img src="{img}" alt="waifu" style="height: 350px!important;">
+            <img src={img} alt="waifu" style="height: 350px!important;" />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@
   <div class="flex flex-wrap">
     {#each anime as info}
       <div class="w-1/5 p-1">
-        <img src={info.image_url}>
+        <img src={info.image_url} alt={info.title}>
         <p>{info.title}</p>
         <p>{info.rank}</p>
       </div>
