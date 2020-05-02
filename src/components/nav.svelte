@@ -10,7 +10,7 @@ import {link} from 'svelte-spa-router';
         <a href="/" use:link>Animes</a>
       </li>
       <li>
-        <a href="https://getwaves.io/" target="_blank">Mangas</a>
+        <a href="/manga" use:link>Mangas</a>
       </li>
       <li>
         <a href="/hentai" use:link>Hentai</a>
