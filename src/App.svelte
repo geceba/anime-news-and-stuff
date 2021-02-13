@@ -1,30 +1,51 @@
 <script>
-	export let name;
+  import Nav from "./components/nav.svelte";
+  import HeaderContent from "./components/header-content.svelte";
+  import Router from "svelte-spa-router";
+  import routes from "./routes.js";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+<style lang="scss" global>
+  @import "./styles/global.scss";
 </style>
+
+<main>
+  <div class="banner">
+    <div class="svg-group bg-gradient">
+      <div class="svg-blob">
+        <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+          <linearGradient id="orangeToindianred">
+            <stop stop-color="rgb(36, 31, 95)" offset="0%" />
+            <stop stop-color="rgb(20, 20, 109)" offset="100%" />
+          </linearGradient>
+          <path
+            fill="url(#orangeToindianred)"
+            d="M418.8 127.8c30.3 30.6 46.6 71.9 59.9 113.9 13.4 42 23.9 84.8
+            14.4 123.2-9.5 38.4-39 72.5-74.5 106-35.5 33.4-77.1 66.3-120.9
+            69.4-43.7
+            3.1-89.8-23.6-113.6-60.8-23.7-37.3-25.2-85.2-44.1-130.5-18.8-45.3-54.9-87.9-59.5-134.6-4.5-46.7
+            22.6-97.5 64.4-124.4 41.9-26.9 98.5-29.9 148.9-21.4 50.5 8.5 94.8
+            28.5 125 59.2z" />
+        </svg>
+      </div>
+
+      <div class="svg-wave svg-wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <linearGradient id="orangeToViolet">
+            <stop stop-color="rgb(30, 40, 91)" offset="20%" />
+            <stop stop-color="rgb(20, 20, 109)" offset="70%" />
+            <stop stop-color="rgb(36, 31, 85)" offset="100%" />
+          </linearGradient>
+          <path
+            fill="url(#orangeToViolet)"
+            fill-opacity="1"
+            d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,128C672,160,768,192,864,197.3C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
+        </svg>
+      </div>
+
+	  <Nav />
+	  <HeaderContent />
+    </div>
+  </div>
+  <Router {routes} />
+</main>
